@@ -1,0 +1,64 @@
+img{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+}
+.container{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    margin-top: 15%;
+    margin-left:40%;
+    perspective: 1000px;
+    transform-style:preserve-3d ;
+    transform:rotateX(-10deg)rotateZ(-10deg);
+    animation: ror 20s linear infinite;
+}
+@keyframes ror{
+    50%{
+        transform: rotateX(30deg);
+    }
+    80%{
+        transform: rotateX(-30deg);
+    }
+}
+.wrapper{
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate{
+    from{
+
+    }
+    to{
+        transform: rotatey(360deg);
+    }
+}
+img:nth-child(1){
+   transform: rotatey(60deg)translate(300px); 
+}
+img:nth-child(2){
+    transform: rotatey(120deg)translate(300px); 
+ }
+ img:nth-child(3){
+    transform: rotatey(180deg)translate(300px); 
+ }
+ img:nth-child(4){
+    transform: rotatey(240deg)translate(300px); 
+ }
+ img:nth-child(5){
+    transform: rotatey(300deg)translate(300px); 
+ }
+ img:nth-child(6){
+    transform: rotatey(360deg)translate(300px); 
+ }
+ img:hover{
+    width: 340px;
+    height:200px ;
+    position: absolute;
+ }
+ body{
+    background: linear-gradient( 90deg,blue,skyblue,blue);
+ }
